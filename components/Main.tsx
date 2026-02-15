@@ -1,4 +1,3 @@
-
 import { FaGolang } from "react-icons/fa6"
 import { BiLogoJavascript, BiLogoPostgresql, } from "react-icons/bi"
 import { SiTypescript } from "react-icons/si"
