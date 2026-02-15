@@ -13,7 +13,7 @@ const page = () => {
   const project = projects.find(prj => prj.slug == projName);
 
   return (
-    <main className="min-h-[calc(100vh-4rem)]">
+    <main className="min-h-[calc(100vh-4rem)] px-6">
       <div className="pt-10 mb-10 sm:flex-center">
         <button 
           onClick={() => router.push("/")} 
