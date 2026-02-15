@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "inter";
+  src: url("../fonts/Inter_28pt-Regular.ttf");
+}
+
+@font-face {
+  font-family: "spaceG";
+  src: url("../fonts/SpaceGrotesk-Medium.ttf");
+}
+
+@font-face {
+  font-family: "jsans";
+  src: url("../fonts/PlusJakartaSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: "outfit";
+  src: url("../fonts/Outfit-Medium.ttf");
+}
+
+@utility flex-center {
+  @apply flex justify-center items-center;
+}
+
+@utility flex-start {
+  @apply flex justify-start items-center;
+}
+
+@utility flex-end {
+  @apply flex justify-end items-center;
+}
+
+@utility flex-between {
+  @apply flex justify-between items-center;
+}
+
+@utility flex-around {
+  @apply flex justify-around items-center;
+}
+
+@utility active-btn {
+  @apply hover:bg-transparent hover:text-purple-900 active:bg-transparent active:text-purple-900;
+}
+
+@utility purple-border {
+  @apply border border-purple-900;
+}
+
+@utility gray-border {
+  @apply border border-gray-500;
+}
+
+@utility black-border {
+  @apply border border-black;
+}
+
+@utility contact-input {
+  @apply border bg-gray-50 border-gray-100 rounded-md w-full p-3 text-sm block mt-2 focus:outline-none resize-none;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 16s linear forwards infinite;
+}
+
+.glass-header {
+  position: relative;
+  overflow: hidden;
+
+  /* base glass */
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(8px) brightness(1.25) saturate(160%);
+  -webkit-backdrop-filter: blur(8px) brightness(1.25) saturate(160%);
+
+  /* glass edge */
+  /* border: 1px solid rgba(255, 255, 255, 0.45); */
+}
+
+/* light reflection */
+.glass-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.55),
+    rgba(255,255,255,0.18) 45%,
+    rgba(255,255,255,0.05)
+  );
+  pointer-events: none;
+}
+
+/* inner glass rim */
+.glass-header::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.65),
+    inset 0 -1px 0 rgba(255,255,255,0.2);
+  pointer-events: none;
+}
+
+.dimmed {
+  position: relative;
+  background: #fff; /* your main content bg */
+  padding: 20px;
+  
+  /* dim the content */
+  opacity: 0.6;
+
+  /* gradient fade at edges */
+  -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: cover;
+
+  mask-image: radial-gradient(circle, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: cover;
+}
+
+@theme {
+  --color-accent: rgb(250, 250, 250);
+  --color-mutedLg: rgb(217, 219, 221);
+  --color-dark: rgb(10, 10, 10);
+  --color-muted: rgb(114, 114, 116);
+  --color-light-gray: rgb(250, 250, 250);
+  --font-spaceG: "spaceG";
+  --font-inter: "inter";
+  --font-jsans: "jsans";
+  --font-outfit: "outfit";
+}
