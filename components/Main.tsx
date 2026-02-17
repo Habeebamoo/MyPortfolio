@@ -18,7 +18,7 @@ const Main = () => {
             I craft scalable web applications that helps businesses grow, streamline operations, and deliver real-world results. therefore building systems that are fast, scalable, and built to last.
           </p>
           <p className="leading-6 text-gray-600 font-inter mt-6">
-            I am Habeeb Amoo, a software developer with over 2+ years of building high performance applications. with mastery of both frontend and backend development. I specialize in building robust applications, API design, and end-to-end product development.
+            I am Habeeb Amoo, a software developer with over 2+ years of experience building high performance applications. with mastery of both frontend and backend development. I specialize in building robust applications, API design, and end-to-end product development.
           </p>
         </div>
       </section>
@@ -69,7 +69,7 @@ const Main = () => {
       <section className="mt-20 px-2 md:w-100 mx-auto">
         <h1 className="font-inter font-bold text-2xl text-center">Let's work together.</h1> 
         
-        <p className="text-muted text-center font-inter text-sm mt-1">
+        <p className="text-muted text-center font-inter text-sm mt-2">
           I'm always interested in hearing about new projects and oppurtunities
         </p>
 
