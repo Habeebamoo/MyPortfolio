@@ -26,7 +26,7 @@ const Hero = () => {
           Hey, I'm Habeeb Amoo.
         </h1>
 
-        <h1 className="text-3xl font-outfit mt-2" data-aos="zoom-in">Software Developer.</h1>
+        <h1 className="text-3xl font-outfit mt-2" data-aos="zoom-in">Software Engineer.</h1>
 
         <p className="mt-2 text-gray-600 mb-6 w-[90%] font-inter" data-aos="zoom-in">
           I craft premium digital experiences, creating fast, secure and reliable solutions.
