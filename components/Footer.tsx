@@ -16,6 +16,7 @@ const Footer = () => {
           href="https://github.com/Habeebamoo"
           target="_blank"
           rel="noopener noeferrer"
+          aria-label="Habeeb Amoo GitHub profile"
         >
           <BsGithub size={20} />
         </a>
@@ -24,6 +25,7 @@ const Footer = () => {
           href="https://x.com/Habeeb_O_Amoo"
           target="_blank"
           rel="noopener noeferrer"
+          aria-label="Habeeb Amoo on X"
         >
           <BsTwitterX size={19} />
         </a>
@@ -32,6 +34,7 @@ const Footer = () => {
           href="https://linkedin.com/in/habeeb-amoo-2a5787380"
           target="_blank"
           rel="noopener noeferrer"
+          aria-label="Habeeb Amoo on LinkedIn"
         >
           <BsLinkedin size={19} />
         </a>

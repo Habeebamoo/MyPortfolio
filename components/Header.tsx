@@ -9,6 +9,7 @@ const Header = () => {
           href="https://github.com/Habeebamoo"
           target="_blank"
           rel="noopener noeferrer"
+          aria-label="Habeeb Amoo GitHub profile"
         >
           <BsGithub size={26} />
         </a>
@@ -17,6 +18,7 @@ const Header = () => {
           href="https://x.com/Habeeb_O_Amoo"
           target="_blank"
           rel="noopener noeferrer"
+          aria-label="Habeeb Amoo on X"
         >
           <BsTwitterX size={25} />
         </a>
@@ -25,6 +27,7 @@ const Header = () => {
           href="https://linkedin.com/in/habeeb-amoo-2a5787380"
           target="_blank"
           rel="noopener noeferrer"
+          aria-label="Habeeb Amoo on LinkedIn"
         >
           <BsLinkedin size={25} />
         </a>
