@@ -14,11 +14,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Habeeb Amoo",
-  description: "I'm Habeeb Amoo, a software developer from Nigeria with experience in building web applications & systems.",
+  description: "I'm Habeeb Amoo, a software developer with several years of experience building scalable, real-world web applications, APIs, and systems using modern technologies and architecture.",
   keywords: ["Habeeb Amoo", "Habeeb", "Amoo", "Habeebamoo"],
   openGraph: {
     title: 'Habeeb Amoo',
-    description: "I'm Habeeb Amoo, a software developer from Nigeria with experience in building web applications & systems.",
+    description: "I'm Habeeb Amoo, a software developer with several years of experience building scalable, real-world web applications, APIs, and systems using modern technologies and architecture.",
     url: 'https://habeebamoo.vercel.app',
     siteName: "Habeeb Amoo",
     images: [
@@ -26,18 +26,18 @@ export const metadata: Metadata = {
         url: 'https://habeebamoo.vercel.app/anime.jpeg',
         width: 1000,
         height: "1000",
-        alt: 'Avatar',
+        alt: 'Habeeb Amoo',
       },
     ],
-    type: "website"
+    type: "website",
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Habeeb Amoo',
-    description: "I'm Habeeb Amoo, a software developer from Nigeria with experience in building web applications & systems.",
+    description: "I'm Habeeb Amoo, a software developer with several years of experience building scalable, real-world web applications, APIs, and systems using modern technologies and architecture.",
     images: ['https://habeebamoo.vercel.app/anime.jpeg'],
   },
-  icons: "/anime.jpeg"
+  icons: "/anime.jpeg",
 };
 
 export default function RootLayout({
