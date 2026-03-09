@@ -24,11 +24,11 @@ const Main = () => {
       </section>
 
       <div className="flex-center mt-20">
-        <img src="/picture.jpg" className="h-60 md:h-80" />
+        <img src="/picture.jpg" className="h-70 md:h-80" />
       </div>
 
       {/* Projects */}
-      <section className="mt-30 px-2 md:w-200 mx-auto">
+      <section className="mt-30 px-2 md:max-w-200 mx-auto">
         <h1 className="font-inter font-bold text-xl md:text-2xl text-center mb-10">Some Of My Projects.</h1>
 
         {/* display */}
