@@ -26,9 +26,9 @@ const Hero = () => {
           Hey, I'm Habeeb Amoo.
         </h1>
 
-        <h1 className="text-3xl font-outfit mt-2" data-aos="zoom-in">Software Engineer.</h1>
+        <h1 className="text-3xl md:text-4xl font-outfit mt-2">Software Engineer.</h1>
 
-        <p className="mt-2 text-gray-600 mb-6 w-[90%] font-inter" data-aos="zoom-in">
+        <p className="mt-2 md:mt-3 text-gray-600 mb-6 w-[90%] font-inter">
           I craft premium digital experiences, creating fast, secure and reliable solutions.
         </p>
       </motion.div>

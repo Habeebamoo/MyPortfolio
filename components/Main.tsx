@@ -13,7 +13,7 @@ const Main = () => {
       <section className="sm:w-100 mx-auto">
         {/* About me */}
         <div className="mt-40 px-2">
-          <h1 className="font-inter text-2xl font-bold">About Me</h1>
+          <h1 className="font-inter text-2xl md:text-3xl font-bold">About Me</h1>
           <p className="leading-6 text-gray-600 font-inter mt-6">
             I craft scalable web applications that helps businesses grow, streamline operations, and deliver real-world results. therefore building systems that are fast, scalable, and built to last.
           </p>
@@ -23,9 +23,13 @@ const Main = () => {
         </div>
       </section>
 
+      <div className="flex-center mt-20">
+        <img src="/picture.jpg" className="h-80" />
+      </div>
+
       {/* Projects */}
       <section className="mt-30 px-2 md:w-200 mx-auto">
-        <h1 className="font-inter font-bold text-xl text-center mb-10">Some Of My Projects.</h1>
+        <h1 className="font-inter font-bold text-xl md:text-2xl text-center mb-10">Some Of My Projects.</h1>
 
         {/* display */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -46,7 +50,7 @@ const Main = () => {
 
       {/* Tech Stack */}
       <section className="mt-30 md:w-100 mx-auto">
-        <h1 className="font-inter font-bold text-xl text-center mb-7">Technologies.</h1>   
+        <h1 className="font-inter font-bold text-xl md:text-2xl text-center mb-7">Technologies.</h1>   
 
         <div className="relative overflow-hidden w-75 mx-auto dimmed p-5">
           {/* gradient edges */}
@@ -67,7 +71,7 @@ const Main = () => {
 
       {/* Contact */}
       <section className="mt-20 px-2 md:w-100 mx-auto">
-        <h1 className="font-inter font-bold text-2xl text-center">Let's work together.</h1> 
+        <h1 className="font-inter font-bold text-2xl md:text-3xl text-center">Let's work together.</h1> 
         
         <p className="text-muted text-center font-inter text-sm mt-2">
           I'm always interested in hearing about new projects and oppurtunities
