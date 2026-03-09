@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "Habeeb Amoo",
     images: [
       {
-        url: 'https://habeebamoo.vercel.app/anime.jpeg',
+        url: 'https://habeebamoo.vercel.app/anime.jpg',
         width: 1000,
         height: "1000",
         alt: 'Habeeb Amoo',
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Habeeb Amoo',
     description: "I'm Habeeb Amoo, a software developer with several years of experience building scalable, real-world web applications, APIs, and systems using modern technologies and architecture.",
-    images: ['https://habeebamoo.vercel.app/anime.jpeg'],
+    images: ['https://habeebamoo.vercel.app/anime.jpg'],
   },
-  icons: "/anime.jpeg",
+  icons: "/anime.jpg",
 };
 
 export default function RootLayout({

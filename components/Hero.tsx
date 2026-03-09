@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <section className="sm:w-100 mx-auto pt-40">
       <div className="h-30 w-30 rounded-full overflow-hidden shadow-lg border-3 border-white">
-        <img src="/anime.jpeg" className="h-full w-full object-cover" />
+        <img src="/anime.jpg" className="h-full w-full object-cover" />
       </div>
 
       <motion.div
