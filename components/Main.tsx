@@ -24,7 +24,7 @@ const Main = () => {
       </section>
 
       <div className="flex-center mt-20">
-        <img src="/picture.jpg" className="h-80" />
+        <img src="/picture.jpg" className="h-60 md:h-80" />
       </div>
 
       {/* Projects */}
