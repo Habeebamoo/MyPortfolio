@@ -5,7 +5,7 @@ import Main from "@/components/Main"
 
 const page = () => {
   return (
-    <main className="px-6">
+    <main className="px-6 sm:w-150 md:w-190 border-l border-r border-gray-300 mx-auto">
       <Header />
       <Hero />
       <Main />
