@@ -6,6 +6,7 @@ import { LiaNodeJs } from "react-icons/lia"
 import { BsSend } from "react-icons/bs"
 import { RiNextjsFill } from "react-icons/ri"
 import ProjectDisplay from "./ProjectDisplay"
+import { projects } from "@/data/projects"
 
 const Main = () => {
   return (
@@ -30,21 +31,19 @@ const Main = () => {
       {/* Projects */}
       <section className="mt-30 px-2 md:max-w-200 mx-auto">
         <h1 className="font-inter font-bold text-xl md:text-2xl text-center mb-10">Some Of My Projects.</h1>
-
-        {/* display */}
+        
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          <ProjectDisplay 
-            img="/maildrop-img1.png" 
-            title="MailDrop" 
-            description="An Email Marketing tool designed for managing audiences and sending bulk emails." 
-            location="/project/maildrop"
-          />
-          <ProjectDisplay 
-            img="/flash-img1.png" 
-            title="FlashQuiz" 
-            description="A Quiz website that allows users to take quizzess and shows progress." 
-            location="/project/flashquiz"
-          />
+          {projects.map((prj, i) => {
+            return (
+              <ProjectDisplay
+                key={i}
+                title={prj.name}
+                img={prj.images[0]} 
+                description={prj.about}
+                location={prj.location}
+              />
+            )
+          })}
         </div>
       </section>
 
@@ -70,7 +69,7 @@ const Main = () => {
       </section>
 
       {/* Contact */}
-      <section className="mt-20 md:mt-30 px-2 sm:w-100 md:w-140 mx-auto">
+      <section className="mt-20 md:mt-30 px-2 sm:w-100 md:w-120 mx-auto">
         <h1 className="font-inter font-bold text-2xl md:text-3xl text-center">Let's work together.</h1> 
         
         <p className="text-muted text-center font-inter text-sm mt-2">

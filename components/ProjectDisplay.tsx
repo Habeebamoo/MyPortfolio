@@ -17,15 +17,23 @@ const ProjectDisplay = ({ img, title, description, location }: Props) => {
     router.push(location)
   }
 
+  const truncate = (text: string, maxLength: number) => {  
+    if (text.length <= maxLength) {   
+      return text;
+    } else {
+      return text.slice(0, maxLength) + '...';
+    }
+  };
+
   return (
     <div className="border border-mutedLg backdrop-blur-md p-6 rounded-2xl">
       <div className="rounded-xl overflow-hidden border border-gray-300">
         <img src={img} className="w-full h-full" />
       </div>
       <div className="pl-1 mb-2 mt-6">
-        <h1 className="font-inter font-bold text-xl">{title}</h1>
+        <h1 className="font-jsans font-bold text-xl">{title}</h1>
 
-        <p className="mt-2 font-inter text-[15px] text-gray-500 mb-4">{description}</p>
+        <p className="mt-2 font-inter text-[15px] text-gray-500 mb-4">{truncate(description, 50)}</p>
 
         <button 
           onClick={toProject} 

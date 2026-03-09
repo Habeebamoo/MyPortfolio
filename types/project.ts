@@ -7,6 +7,7 @@ export interface Project {
   url: string,
   repo: string,
   images: string[],
+  location: string
   createdAt: string,
   updatedAt: string
 }

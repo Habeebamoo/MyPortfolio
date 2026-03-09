@@ -10,6 +10,7 @@ export const projects: Project[] = [
     url: "https://maildrop.netlify.app",
     repo: "https://github.com/Habebamoo/MailDrop",
     images: ["/maildrop-img1.png", "/maildrop-img2.png", "/maildrop-img3.png", "/maildrop-img4.png"],
+    location: "/project/maildrop",
     createdAt: "2025-07-06",
     updatedAt: "2026-01-24"
   }, {
@@ -21,6 +22,7 @@ export const projects: Project[] = [
     url: "https://flashquiz.netlify.app",
     repo: "https://github.com/Habebamoo/Flashquiz",
     images: ["/flash-img1.png", "/flash-img2.png", "/flash-img-3.png", "/flash-img4.png"],
+    location: "/project/flashquiz",
     createdAt: "2025-06-28",
     updatedAt: "2026-10-15"
   }
