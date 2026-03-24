@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from "@/components/Footer";
 import { projects } from "@/data/projects";
 import { useParams, useRouter } from "next/navigation"
 import { BiLink } from "react-icons/bi";
@@ -76,6 +77,8 @@ const page = () => {
           )
         })}
       </div>
+
+      <Footer />
     </main>
   )
 }
