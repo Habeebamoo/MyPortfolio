@@ -68,6 +68,19 @@ const Main = () => {
         </div>
       </section>
 
+      {/* Work Experience */}
+      <section className="border-t border-b border-gray-200 py-10 mt-30 md:w-150 mx-auto">
+        <h1 className="font-inter font-bold text-lg md:text-xl">Work Experience</h1>
+
+        <div className="md:flex-between mt-10">
+          <p className="font-inter text-[12px] text-gray-500">Dec 2025 - Present</p>
+          <p className="font-inter max-md:mt-3">
+            Software Engineer at 
+            <span className="bg-blue-100/60 border border-blue-100 text-blue-600 rounded-lg ml-3 font-inter py-1 px-3">Orbitrixng</span>
+          </p>
+        </div>
+      </section>
+
       {/* Contact */}
       <section className="mt-20 md:mt-30 px-2 sm:w-100 md:w-120 mx-auto">
         <h1 className="font-inter font-bold text-2xl md:text-3xl text-center">Let's work together.</h1> 

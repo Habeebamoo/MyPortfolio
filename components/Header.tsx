@@ -40,7 +40,7 @@ const Header = () => {
           target="_blank"
           rel="noopener noeferrer"
           aria-label="Habeeb Amoo on Clivo"
-          className="font-outfit bg-black py-2 px-6 rounded-lg cursor-pointer border active:bg-white hover:bg-white active:text-black hover:text-black text-white"
+          className="font-outfit bg-black py-2 px-6 rounded-lg cursor-pointer border border-black active:bg-transparent hover:bg-transparent active:text-black hover:text-black text-white"
         >
           Blog
         </a>
