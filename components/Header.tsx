@@ -1,4 +1,7 @@
 import { BsGithub, BsLinkedin, BsTwitterX } from "react-icons/bs"
+import { LuLinkedin } from "react-icons/lu";
+import { RiGithubLine } from "react-icons/ri";
+import { SlSocialLinkedin } from "react-icons/sl";
 
 const Header = () => {
   return (
@@ -11,7 +14,7 @@ const Header = () => {
           rel="noopener noeferrer"
           aria-label="Habeeb Amoo GitHub profile"
         >
-          <BsGithub size={26} />
+          <RiGithubLine size={20} />
         </a>
 
         <a 
@@ -20,7 +23,7 @@ const Header = () => {
           rel="noopener noeferrer"
           aria-label="Habeeb Amoo on X"
         >
-          <BsTwitterX size={25} />
+          <BsTwitterX size={19} />
         </a>
 
         <a 
@@ -29,7 +32,7 @@ const Header = () => {
           rel="noopener noeferrer"
           aria-label="Habeeb Amoo on LinkedIn"
         >
-          <BsLinkedin size={25} />
+          <LuLinkedin size={21} />
         </a>
 
         <a
@@ -37,7 +40,7 @@ const Header = () => {
           target="_blank"
           rel="noopener noeferrer"
           aria-label="Habeeb Amoo on Clivo"
-          className="font-outfit bg-black py-2 px-5 rounded-lg cursor-pointer border active:bg-white hover:bg-white active:text-black hover:text-black text-white"
+          className="font-outfit bg-black py-2 px-6 rounded-lg cursor-pointer border active:bg-white hover:bg-white active:text-black hover:text-black text-white"
         >
           Blog
         </a>

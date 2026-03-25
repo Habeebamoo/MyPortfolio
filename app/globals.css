@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "inter";
-  src: url("../fonts/Inter_28pt-Regular.ttf");
+  src: url("../fonts/Inter_24pt-Regular.ttf");
 }
 
 @font-face {
@@ -18,6 +18,11 @@
 @font-face {
   font-family: "outfit";
   src: url("../fonts/Outfit-Medium.ttf");
+}
+
+@font-face {
+  font-family: "dm";
+  src: url("../fonts/DMSans-Medium.ttf");
 }
 
 @utility flex-center {
@@ -143,4 +148,5 @@
   --font-inter: "inter";
   --font-jsans: "jsans";
   --font-outfit: "outfit";
+  --font-dm: "dm";
 }
