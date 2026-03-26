@@ -76,7 +76,7 @@ const Main = () => {
           <p className="font-inter text-[12px] text-gray-500">Dec 2025 - Present</p>
           <p className="font-inter max-md:mt-3">
             Software Engineer at 
-            <span className="bg-blue-100/60 border border-blue-100 text-blue-600 rounded-lg ml-3 font-inter py-1 px-3">Orbitrixng</span>
+            <span className="bg-blue-100/60 border border-blue-100 text-blue-600 text-sm rounded-lg ml-3 font-inter py-1 px-3">Orbitrixng</span>
           </p>
         </div>
       </section>
