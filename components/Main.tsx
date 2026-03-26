@@ -82,7 +82,7 @@ const Main = () => {
       </section>
 
       {/* Contact */}
-      <section className="mt-20 md:mt-30 px-2 sm:w-100 md:w-120 mx-auto">
+      <section className="mt-30 px-2 sm:w-100 md:w-120 mx-auto">
         <h1 className="font-inter font-bold text-2xl md:text-3xl text-center">Let's work together.</h1> 
         
         <p className="text-muted text-center font-inter text-sm mt-2">
