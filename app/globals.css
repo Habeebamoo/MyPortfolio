@@ -25,6 +25,11 @@
   src: url("../fonts/DMSans-Medium.ttf");
 }
 
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
 @utility flex-center {
   @apply flex justify-center items-center;
 }
@@ -149,4 +154,5 @@
   --font-jsans: "jsans";
   --font-outfit: "outfit";
   --font-dm: "dm";
+  --font-roboto: "roboto";
 }

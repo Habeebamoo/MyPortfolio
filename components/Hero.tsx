@@ -28,7 +28,7 @@ const Hero = () => {
 
         <h1 className="text-3xl md:text-5xl font-outfit mt-2">Software Engineer.</h1>
 
-        <p className="mt-2 md:mt-4 text-gray-500 mb-6 w-[90%] font-inter md:w-[70%]">
+        <p className="mt-2 md:mt-4 text-gray-600 mb-6 w-[90%] font-roboto md:w-[70%]">
           I craft premium digital experiences, creating fast, secure and reliable solutions.
         </p>
       </motion.div>
