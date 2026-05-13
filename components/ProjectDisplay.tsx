@@ -31,9 +31,9 @@ const ProjectDisplay = ({ img, title, description, location }: Props) => {
         <img src={img} className="w-full h-full" />
       </div>
       <div className="pl-1 mb-2 mt-6">
-        <h1 className="font-jsans font-bold text-xl">{title}</h1>
+        <h1 className="font-inter font-bold text-xl">{title}</h1>
 
-        <p className="mt-2 font-inter text-[15px] text-gray-500 mb-4">{truncate(description, 80)}</p>
+        <p className="mt-2 font-inter text-[15px] text-gray-500 mb-4">{truncate(description, 100)}</p>
 
         <button 
           onClick={toProject} 

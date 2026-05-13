@@ -4,9 +4,9 @@ export const projects: Project[] = [
    {
     slug: "clivo",
     name: "Clivo",
-    description: "Article Writting Platform",
+    description: "Article Writing Platform",
     stack: ["React.js", "TypeScript", "Golang", "PostgreSQL"],
-    about: "Clivo is a platform for sharing and discovering simple stories. It provides an online space for article writers and readers all in one friendly social app.",
+    about: "Clivo is an article/blog writing platform that connects writers and readers together all in 1 social platform.",
     url: "https://myclivo.com",
     repo: "https://github.com/Habeebamoo",
     images: ["/clivo1.png", "/clivo2.png", "/clivo3.png", "/clivo4.png"],

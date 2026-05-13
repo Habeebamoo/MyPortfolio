@@ -8,7 +8,7 @@ const Hero = () => {
   const router = useRouter()
 
   const toCv = () => {
-    router.push("https://drive.google.com/file/d/1TnoG0xwQkDlw2Rj_gtHwbfEobqXFKTnH/view?usp=drive_link")
+    router.push("https://drive.google.com/file/d/1WR548ukwwPpgbrW4S1meLXjHdiHHZWs9/view?usp=sharing")
   };
 
   return (
@@ -22,13 +22,13 @@ const Hero = () => {
         animate="show"
         variants={heroText}
       >
-        <h1 className="font-jsans text-orange-600 mt-6 md:text-lg" data-aos="zoom-in">
+        <h1 className="font-roboto text-orange-600 mt-6 md:text-lg" data-aos="zoom-in">
           Hey, I'm Habeeb Amoo.
         </h1>
 
         <h1 className="text-3xl md:text-5xl font-outfit mt-2">Software Engineer.</h1>
 
-        <p className="mt-2 md:mt-4 text-gray-600 mb-6 w-[90%] font-roboto md:w-[70%]">
+        <p className="mt-2 md:mt-4 text-gray-500 mb-6 w-[90%] font-roboto md:w-[70%]">
           I craft premium digital experiences, creating fast, secure and reliable solutions.
         </p>
       </motion.div>
