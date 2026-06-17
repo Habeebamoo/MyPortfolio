@@ -27,7 +27,7 @@
 
 @font-face {
   font-family: "roboto";
-  src: url("../fonts/Roboto-Regular.ttf");
+  src: url("../fonts/Roboto-Light.ttf");
 }
 
 @utility flex-center {
@@ -154,5 +154,5 @@
   --font-jsans: "jsans";
   --font-outfit: "outfit";
   --font-dm: "dm";
-  --font-roboto: "roboto";
+  --font-roboto:"roboto";
 }
