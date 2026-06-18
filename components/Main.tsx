@@ -1,10 +1,11 @@
-import { FaGolang } from "react-icons/fa6"
+import { FaDocker, FaGitAlt, FaGolang } from "react-icons/fa6"
 import { BiLogoJavascript, BiLogoPostgresql, } from "react-icons/bi"
-import { SiTypescript } from "react-icons/si"
+import { SiExpress, SiMongodb, SiTypescript } from "react-icons/si"
 import { FaReact } from "react-icons/fa"
 import { LiaNodeJs } from "react-icons/lia"
 import { BsSend } from "react-icons/bs"
 import { RiNextjsFill } from "react-icons/ri"
+import { DiRedis } from "react-icons/di"
 import ProjectDisplay from "./ProjectDisplay"
 import { projects } from "@/data/projects"
 
@@ -63,7 +64,12 @@ const Main = () => {
             <div className="text-gray-500"><FaReact size={30} /></div>
             <div className="text-gray-500"><RiNextjsFill size={36} /></div>
             <div className="text-gray-500"><LiaNodeJs size={40} /></div>
+            <div className="text-gray-500"><SiExpress size={35} /></div>
             <div className="text-gray-500"><BiLogoPostgresql size={35} /></div>
+            <div className="text-gray-500"><DiRedis size={37} /></div>
+            <div className="text-gray-500"><SiMongodb size={35} /></div>
+            <div className="text-gray-500"><FaGitAlt size={35} /></div>
+            <div className="text-gray-500"><FaDocker size={35} /></div>
           </div>
         </div>
       </section>
