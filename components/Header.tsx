@@ -25,7 +25,7 @@ const Header = () => {
           <RiGithubLine size={20} />
         </a>
         <a 
-          href="https://x.com/Habeeb_O_Amoo"
+          href="https://x.com/habeebamoo08"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Habeeb Amoo on X"
