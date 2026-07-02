@@ -1,47 +1,56 @@
-import { BsGithub, BsLinkedin, BsTwitterX } from "react-icons/bs"
+"use client";
+
+import { BsGithub, BsLinkedin, BsTwitterX } from "react-icons/bs";
 
 const Footer = () => {
-  const year = new Date().getFullYear()
+  const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-20 pb-40 w-[90%] sm:w-100 mx-auto">
-      <hr className="text-mutedLg" />
+    <footer className="w-full max-w-165 mx-auto px-6 mt-12 pb-20">
+      {/* Divider */}
+      <hr className="border-none border-t border-[#E5E5E1]" />
 
-      <p className="mt-6 text-center font-inter text-sm text-muted">
-        Copywright &copy; {year} Habeeb Amoo.
-      </p>
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8">
+        {/* Copyright */}
+        <p className="text-[12px] text-[#B0B0AA]">
+          © {year} Habeeb Amoo
+        </p>
 
-      <div className="flex-center gap-6 text-muted mt-6">
-        <a 
-          href="https://github.com/Habeebamoo"
-          target="_blank"
-          rel="noopener noeferrer"
-          aria-label="Habeeb Amoo GitHub profile"
-        >
-          <BsGithub size={20} />
-        </a>
+        {/* Social Links */}
+        <div className="flex items-center gap-5 text-[#9B9B9B]">
+          <a 
+            href="https://github.com/Habeebamoo"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Habeeb Amoo GitHub profile"
+            className="hover:text-[#0E0E0E] transition-colors duration-150"
+          >
+            <BsGithub size={16} />
+          </a>
 
-        <a 
-          href="https://x.com/Habeeb_O_Amoo"
-          target="_blank"
-          rel="noopener noeferrer"
-          aria-label="Habeeb Amoo on X"
-        >
-          <BsTwitterX size={19} />
-        </a>
+          <a 
+            href="https://x.com/habebamoo08"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Habeeb Amoo on X"
+            className="hover:text-[#0E0E0E] transition-colors duration-150"
+          >
+            <BsTwitterX size={14} />
+          </a>
 
-        <a 
-          href="https://linkedin.com/in/habeeb-amoo-2a5787380"
-          target="_blank"
-          rel="noopener noeferrer"
-          aria-label="Habeeb Amoo on LinkedIn"
-        >
-          <BsLinkedin size={19} />
-        </a>
+          <a 
+            href="https://linkedin.com/in/habeeb-amoo-2a5787380"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Habeeb Amoo on LinkedIn"
+            className="hover:text-[#0E0E0E] transition-colors duration-150"
+          >
+            <BsLinkedin size={16} />
+          </a>
+        </div>
       </div>
-
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

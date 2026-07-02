@@ -1,59 +1,65 @@
-import { BsTwitterX } from "react-icons/bs"
+"use client";
+
+import { useState } from "react";
+import { BsTwitterX } from "react-icons/bs";
 import { LuLinkedin } from "react-icons/lu";
 import { RiGithubLine } from "react-icons/ri";
 
 const Header = () => {
+  const [theme, setTheme] = useState<"light" | "dark">("light");
+
   return (
-    <header className="fixed z-20 top-0 left-0 right-0 flex justify-center pt-10 px-4">
-      <nav
-        className="flex items-center gap-6 rounded-2xl py-4 px-6 border border-gray-200"
-        style={{
-          backdropFilter: "blur(24px) saturate(200%)",
-          WebkitBackdropFilter: "blur(24px) saturate(200%)",
-          backgroundColor: "rgba(255, 255, 255, 0.45)",
-          fontWeight: 700,
-          color: "#111",
-        }}
-      >
+    <header className="w-full max-w-165 mx-auto pt-9 px-6 flex items-center justify-between">
+      {/* Name / Brand */}
+      <span className="text-[13px] font-medium text-[#0E0E0E] tracking-[-0.01em]">
+        <span className="hidden min-[380px]:inline">Habeeb Amoo</span>
+        <span className="inline min-[380px]:hidden">HA</span>
+      </span>
+
+      {/* Navigation & Theme Toggle */}
+      <nav className="flex items-center gap-4 min-[380px]:gap-5">
         <a 
           href="https://github.com/Habeebamoo"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Habeeb Amoo GitHub profile"
-          className="hover:opacity-50 transition-opacity duration-200"
+          aria-label="GitHub Profile"
+          className="text-[#3D3D3D] transition-colors duration-150"
         >
-          <RiGithubLine size={20} />
+          <RiGithubLine size={16} />
         </a>
         <a 
           href="https://x.com/habeebamoo08"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Habeeb Amoo on X"
-          className="hover:opacity-50 transition-opacity duration-200"
+          aria-label="Twitter Profile"
+          className="text-[#3D3D3D] transition-colors duration-150"
         >
-          <BsTwitterX size={19} />
+          <BsTwitterX size={14} />
         </a>
         <a 
           href="https://linkedin.com/in/habeeb-amoo-2a5787380"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Habeeb Amoo on LinkedIn"
-          className="hover:opacity-50 transition-opacity duration-200"
+          aria-label="LinkedIn Profile"
+          className="text-[#3D3D3D] transition-colors duration-150"
         >
-          <LuLinkedin size={21} />
+          <LuLinkedin size={16} />
         </a>
+
+        {/* Minimalist Vertical Divider */}
+        <span className="h-3 w-px bg-[#E5E5E1] dark:bg-[#3D3D3D]" />
+
         <a
           href="https://myclivo.com/@habeebamoo08" 
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Habeeb Amoo on Clivo"
-          className="font-outfit font-bold bg-black py-2 px-6 rounded-lg cursor-pointer border border-black active:bg-transparent hover:bg-transparent active:text-black hover:text-black text-white transition-all duration-200"
+          className="text-[#3D3D3D] text-sm transition-colors duration-150"
         >
           Blog
         </a>
       </nav>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

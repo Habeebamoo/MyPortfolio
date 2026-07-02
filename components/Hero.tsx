@@ -5,44 +5,59 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 
 const Hero = () => {
-  const router = useRouter()
+  const router = useRouter();
 
   const toCv = () => {
-    router.push("https://drive.google.com/file/d/1iu21hGogmtBBg9rDB70jzJDakVfmOjYI/view?usp=drive_link")
+    router.push("https://drive.google.com/file/d/1iu21hGogmtBBg9rDB70jzJDakVfmOjYI/view?usp=drive_link");
   };
 
   return (
-    <section className="sm:w-100 md:w-140 mx-auto pt-50">
-      <div className="h-30 w-30 rounded-full overflow-hidden shadow-lg border-3 border-white">
-        <img src="/anime.jpg" className="h-full w-full object-cover" />
-      </div>
-
+    <section className="w-full max-w-165 mx-auto pt-30 pb-16 px-6">
       <motion.div
         initial="hidden"
         animate="show"
         variants={heroText}
+        className="flex flex-col md:flex-row md:items-start gap-6 md:gap-8"
       >
-        <h1 className="font-roboto text-orange-600 mt-6 md:text-lg" data-aos="zoom-in">
-          Hey, I'm Habeeb Amoo.
-        </h1>
+        {/* Circular Avatar Image */}
+        <div className="w-20 h-20 md:w-30 md:h-30 rounded-full overflow-hidden shrink-0 border border-[#E5E5E1]">
+          <img 
+            src="/avatar.jpg" 
+            alt="Habeeb Amoo" 
+            className="w-full h-full object-cover"
+          />
+        </div>
 
-        <h1 className="text-3xl md:text-5xl font-outfit mt-2">Software Engineer.</h1>
+        {/* Content Right Section */}
+        <div className="flex-1">
+          {/* Title matching fluid sizing and structure */}
+          <h1 className="text-[34px] sm:text-[44px] md:text-[50px] font-semibold text-[#0E0E0E] leading-[1.1] tracking-[-0.035em] mb-7">
+            Backend &amp; Systems<br />
+            Engineer<span className="inline-block w-0.75 h-[0.8em] bg-[#0E0E0E] ml-0.75 align-middle animate-[blink_0.85s_step-end_infinite]"></span>
+          </h1>
 
-        <p className="mt-2 md:mt-4 text-gray-700 mb-6 w-[90%] font-roboto md:w-[70%]">
-          I craft premium digital experiences, creating fast, secure and reliable solutions.
-        </p>
+          {/* About Paragraphs */}
+          <p className="text-[15px] text-[#3D3D3D] leading-[1.8] max-w-140">
+            I design and build APIs, backend services, and distributed systems — focused on performance, reliability, and clean architecture that holds up under real conditions.
+          </p>
+          
+          <p className="text-[15px] text-[#3D3D3D] leading-[1.8] max-w-140 mt-4 mb-7">
+            Beyond the core infrastructure, I build the product layer — shipping fast Next.js applications that solves real users problems.
+          </p>
+
+          {/* Underlined CV Link nested inside content flow */}
+          <div className="text-[15px] text-[#3D3D3D] leading-[1.8]">
+            <button
+              onClick={toCv}
+              className="underline underline-offset-[3px] text-[#3D3D3D] hover:text-[#0E0E0E] transition-colors duration-150 cursor-pointer"
+            >
+              Download CV
+            </button>
+          </div>
+        </div>
       </motion.div>
-
-      <div>
-        <button
-          onClick={toCv} 
-          className="py-3 px-5 bg-black border cursor-pointer border-black text-white text-sm font-jsans rounded-xl active:bg-transparent hover:bg-transparent hover:text-black active:text-black"
-        >
-          Download CV
-        </button>
-      </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
