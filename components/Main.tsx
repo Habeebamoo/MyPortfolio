@@ -28,7 +28,7 @@ const Main = () => {
             </span>
           </div>
           <p className="text-[13px] text-[#6B6B6B] leading-[1.65]">
-            A high-throughput transactional notification delivery system featuring robust asynchronous queuing, retries, and strict delivery guarantees.
+            A high-throughput notification delivery system featuring robust asynchronous queuing, retries, and strict delivery guarantees.
           </p>
         </a>
 
@@ -48,7 +48,7 @@ const Main = () => {
             </span>
           </div>
           <p className="text-[13px] text-[#6B6B6B] leading-[1.65]">
-            A full-stack, high-performance publishing platform for writers and readers. Built to handle structured content distribution with an optimized Go API layer and a highly responsive, reader-first frontend.
+            A full-stack, high-performance article/blogging platform for writers and readers. Built to handle structured content distribution with an optimized Go API layer and a highly responsive, reader-first frontend.
           </p>
         </a>
       </section>
@@ -59,7 +59,7 @@ const Main = () => {
       {/* Work Experience Section */}
       <section className="py-12">
         <p className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#9B9B9B] mb-7">
-          Experience
+          Work Experience
         </p>
         <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6">
           <span className="text-[12px] text-[#9B9B9B] min-w-32.5 shrink-0">
@@ -80,7 +80,7 @@ const Main = () => {
           Contact
         </p>
         <p className="text-[15px] text-[#3D3D3D] leading-[1.8]">
-          Open to remote backend and systems roles.{" "}
+          Available for opportunities and projects.{" "}
           <a 
             href="mailto:habeebamoo08@gmail.com" 
             className="underline underline-offset-[3px] text-[#3D3D3D] hover:text-[#0E0E0E] transition-colors duration-150"

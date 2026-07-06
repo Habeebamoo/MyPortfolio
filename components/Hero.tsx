@@ -32,7 +32,7 @@ const Hero = () => {
         <div className="flex-1">
           {/* Title matching fluid sizing and structure */}
           <h1 className="text-[34px] sm:text-[44px] md:text-[50px] font-semibold text-[#0E0E0E] leading-[1.1] tracking-[-0.035em] mb-7">
-            Backend &amp; Systems<br />
+            Software<br />
             Engineer<span className="inline-block w-0.75 h-[0.8em] bg-[#0E0E0E] ml-0.75 align-middle animate-[blink_0.85s_step-end_infinite]"></span>
           </h1>
 
