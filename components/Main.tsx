@@ -10,9 +10,9 @@ const Main = () => {
           Projects
         </p>
 
-        {/* Project 1: Notification Service (Tunnl) */}
+        {/* Project 1: Notification Service (Intunel) */}
         <a 
-          href="https://github.com/Habeebamoo" 
+          href="https://github.com/Habeebamoo/intunel-backend" 
           target="_blank" 
           rel="noopener noreferrer"
           className="block py-5 border-t border-b border-[#EEEEE9] hover:opacity-55 transition-opacity duration-150 cursor-pointer"
@@ -20,7 +20,7 @@ const Main = () => {
           {/* Switched to flex-col by default for tiny screens, goes back to flex-row at 400px wide */}
           <div className="flex flex-col min-[400px]:flex-row min-[400px]:items-baseline justify-between gap-1 min-[400px]:gap-4 mb-2">
             <span className="text-[14px] font-medium text-[#0E0E0E]">
-              Tunnl
+              Intunel
             </span>
             {/* Allowed wrapping on small screens, removed absolute whitespace-nowrap */}
             <span className="text-[11px] min-[400px]:text-[12px] text-[#9B9B9B] shrink-0">
