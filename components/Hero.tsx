@@ -20,11 +20,11 @@ const Hero = () => {
         className="flex flex-col md:flex-row md:items-start gap-6 md:gap-8"
       >
         {/* Circular Avatar Image */}
-        <div className="w-20 h-20 md:w-30 md:h-30 rounded-full overflow-hidden shrink-0 border border-[#E5E5E1]">
+        <div className="w-25 h-25 md:w-30 md:h-30 rounded-full overflow-hidden shrink-0 border border-[#E5E5E1]">
           <img 
             src="/avatar.jpg" 
             alt="Habeeb Amoo" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-[25%_99%]"
           />
         </div>
 
