@@ -11,44 +11,47 @@ const Main = () => {
         </p>
 
         {/* Project 1: Notification Service (Intunel) */}
-        <a 
-          href="https://github.com/Habeebamoo/intunel-backend" 
-          target="_blank" 
+        {/* Intunel */}
+        <a
+          href="https://github.com/Habeebamoo/intunel"
+          target="_blank"
           rel="noopener noreferrer"
-          className="block py-5 border-t border-b border-[#EEEEE9] hover:opacity-55 transition-opacity duration-150 cursor-pointer"
+          className="block py-5 border-t border-b border-[#EEEEE9] hover:opacity-55 transition-opacity duration-150"
         >
-          {/* Switched to flex-col by default for tiny screens, goes back to flex-row at 400px wide */}
-          <div className="flex flex-col min-[400px]:flex-row min-[400px]:items-baseline justify-between gap-1 min-[400px]:gap-4 mb-2">
+          <div className="flex flex-col gap-1 mb-2">
             <span className="text-[14px] font-medium text-[#0E0E0E]">
               Intunel
             </span>
-            {/* Allowed wrapping on small screens, removed absolute whitespace-nowrap */}
-            <span className="text-[11px] min-[400px]:text-[12px] text-[#9B9B9B] shrink-0">
-              Go · Redis Streams · PostgreSQL
+
+            <span className="text-[11px] text-[#9B9B9B] break-all">
+              github.com/Habeebamoo/intunel
             </span>
           </div>
+
           <p className="text-[13px] text-[#6B6B6B] leading-[1.65]">
-            A high-throughput notification delivery system featuring robust asynchronous queuing, retries, and strict delivery guarantees.
+            An event-driven notification infrastructure for reliable message delivery.
           </p>
         </a>
 
-        {/* Project 2: Clivo */}
-        <a 
-          href="https://myclivo.com" 
-          target="_blank" 
+        {/* Clivo */}
+        <a
+          href="https://myclivo.com"
+          target="_blank"
           rel="noopener noreferrer"
-          className="block py-5 border-b border-[#EEEEE9] hover:opacity-55 transition-opacity duration-150 cursor-pointer"
+          className="block py-5 border-b border-[#EEEEE9] hover:opacity-55 transition-opacity duration-150"
         >
-          <div className="flex flex-col min-[400px]:flex-row min-[400px]:items-baseline justify-between gap-1 min-[400px]:gap-4 mb-2">
+          <div className="flex flex-col gap-1 mb-2">
             <span className="text-[14px] font-medium text-[#0E0E0E]">
               Clivo
             </span>
-            <span className="text-[11px] min-[400px]:text-[12px] text-[#9B9B9B] shrink-0">
-              Next.js · Go · Gin · PostgreSQL
+
+            <span className="text-[11px] text-[#9B9B9B] break-all">
+              myclivo.com
             </span>
           </div>
+
           <p className="text-[13px] text-[#6B6B6B] leading-[1.65]">
-            A full-stack, high-performance article/blogging platform for writers and readers. Built to handle structured content distribution with an optimized Go API layer and a highly responsive, reader-first frontend.
+            Modern blogging platform for writers and readers.
           </p>
         </a>
       </section>

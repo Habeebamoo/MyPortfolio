@@ -33,7 +33,7 @@ const Hero = () => {
           {/* Title matching fluid sizing and structure */}
           <h1 className="text-[34px] sm:text-[44px] md:text-[50px] font-semibold text-[#0E0E0E] leading-[1.1] tracking-[-0.035em] mb-7">
             Software<br />
-            Engineer<span className="inline-block w-0.75 h-[0.8em] bg-[#0E0E0E] ml-0.75 align-middle animate-[blink_0.85s_step-end_infinite]"></span>
+            Engineer
           </h1>
 
           {/* About Paragraphs */}
@@ -42,7 +42,7 @@ const Hero = () => {
           </p>
           
           <p className="text-[15px] text-[#3D3D3D] leading-[1.8] max-w-140 mt-4 mb-7">
-            Beyond the core infrastructure, I build the product layer — shipping fast Next.js applications that solves real users problems.
+            Beyond the core infrastructure, I build the product layer — shipping fast web applications that solves real users problems.
           </p>
 
           {/* Underlined CV Link nested inside content flow */}
