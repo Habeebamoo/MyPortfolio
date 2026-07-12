@@ -1,7 +1,7 @@
-// components/NowPlaying.tsx
 "use client";
 
 import { useEffect, useState } from "react";
+import { FaPlay } from "react-icons/fa";
 
 type NowPlayingData = {
   isPlaying: boolean;
@@ -49,16 +49,21 @@ export default function NowPlaying() {
       : 0;
 
   return (
-    <div className="max-w-165 mx-auto px-6">
+    <div className="max-w-150 mx-auto px-6">
       <section className="py-12">
         <p className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#9B9B9B] mb-7">
           I'm currently listening to.
         </p>
 
         {!data.isPlaying ? (
-          <p className="text-[13px] text-[#9B9B9B] leading-[1.65]">
-            Not listening to anything right now.
-          </p>
+          <div className="bg-gray-100/60 border border-gray-200 py-4 px-4 rounded-lg flex-start gap-3">
+            <div className="h-7 w-7 rounded-full bg-gray-200 flex-center">
+              <FaPlay color="#9B9B9B" size={10} />
+            </div>
+            <p className="text-[13px] text-[#9B9B9B] leading-[1.65]">
+              Not listening to anything right now.
+            </p>
+          </div>
         ) : (
           <a
             href={data.songUrl}

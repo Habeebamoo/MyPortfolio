@@ -1,4 +1,3 @@
-// app/api/now-playing/route.ts
 import { NextResponse } from "next/server";
 
 const client_id = process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID!;

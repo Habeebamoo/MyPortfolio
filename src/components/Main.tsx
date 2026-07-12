@@ -19,7 +19,7 @@ const Main = () => {
           className="block py-5 border-t border-b border-[#EEEEE9] hover:opacity-55 transition-opacity duration-150"
         >
           <div className="flex flex-col gap-1 mb-2">
-            <span className="text-[14px] font-medium text-[#0E0E0E]">
+            <span className="text-[15px] font-medium text-[#0E0E0E]">
               Intunel
             </span>
 
@@ -28,7 +28,7 @@ const Main = () => {
             </span>
           </div>
 
-          <p className="text-[13px] text-[#6B6B6B] leading-[1.65]">
+          <p className="text-[14px] text-[#6B6B6B] leading-[1.65]">
             An event-driven notification infrastructure for reliable message delivery.
           </p>
         </a>
@@ -41,7 +41,7 @@ const Main = () => {
           className="block py-5 border-b border-[#EEEEE9] hover:opacity-55 transition-opacity duration-150"
         >
           <div className="flex flex-col gap-1 mb-2">
-            <span className="text-[14px] font-medium text-[#0E0E0E]">
+            <span className="text-[15px] font-medium text-[#0E0E0E]">
               Clivo
             </span>
 
@@ -50,7 +50,7 @@ const Main = () => {
             </span>
           </div>
 
-          <p className="text-[13px] text-[#6B6B6B] leading-[1.65]">
+          <p className="text-[14px] text-[#6B6B6B] leading-[1.65]">
             Modern blogging platform for writers and readers.
           </p>
         </a>
