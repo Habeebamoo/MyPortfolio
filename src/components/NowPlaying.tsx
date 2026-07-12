@@ -58,7 +58,7 @@ export default function NowPlaying() {
         {!data.isPlaying ? (
           <div className="bg-gray-100/60 border border-gray-200 py-4 px-4 rounded-lg flex-start gap-3">
             <div className="h-7 w-7 rounded-full bg-gray-200 flex-center">
-              <FaPlay color="#9B9B9B" size={10} />
+              <FaPlay color="#9B9B9B" size={10} className="ml-0.5" />
             </div>
             <p className="text-[13px] text-[#9B9B9B] leading-[1.65]">
               Not listening to anything right now.
