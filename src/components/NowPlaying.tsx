@@ -56,14 +56,14 @@ export default function NowPlaying() {
         </p>
 
         {!data.isPlaying ? (
-          <div className="bg-gray-100/60 border border-gray-200 py-4 px-4 rounded-lg flex-start gap-3">
-            <div className="h-7 w-7 rounded-full bg-gray-200 flex-center">
-              <FaPlay color="#9B9B9B" size={10} className="ml-0.5" />
-            </div>
-            <p className="text-[13px] text-[#9B9B9B] leading-[1.65]">
-              Not listening to anything right now.
-            </p>
-          </div>
+          <div className="bg-[#F7F7F5] border border-[#EEEEE9] py-4 px-4 rounded-lg flex items-center gap-3">
+  <div className="h-7 w-7 rounded-full bg-[#EEEEE9] flex items-center justify-center shrink-0">
+    <FaPlay color="#9B9B9B" size={10} className="ml-0.5" />
+  </div>
+  <p className="text-[13px] text-[#9B9B9B] leading-[1.65] min-w-0">
+    Not listening to anything right now.
+  </p>
+</div>
         ) : (
           <a
             href={data.songUrl}
