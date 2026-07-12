@@ -1,6 +1,6 @@
 "use client";
 
-import { heroText } from "@/utils/animation";
+import { heroText } from "@/src/utils/animation";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 
