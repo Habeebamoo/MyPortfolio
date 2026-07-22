@@ -8,7 +8,7 @@ const Hero = () => {
   const router = useRouter();
 
   const toCv = () => {
-    router.push("https://drive.google.com/file/d/1iu21hGogmtBBg9rDB70jzJDakVfmOjYI/view?usp=drive_link");
+    router.push("https://drive.google.com/file/d/1IZo6_4eUabNZbbPSYw22a36ucxZzxptP/view?usp=drive_link");
   };
 
   return (
