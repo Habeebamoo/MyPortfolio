@@ -49,7 +49,7 @@ export default function NowPlaying() {
       : 0;
 
   return (
-    <div className="max-w-150 mx-auto px-6">
+    <div className="max-w-150 mx-auto px-4">
       <section className="py-12">
         <p className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#9B9B9B] mb-7">
           I'm currently listening to.

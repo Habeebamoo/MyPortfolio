@@ -2,15 +2,14 @@
 
 const Main = () => {
   return (
-    <main className="w-full max-w-165 mx-auto px-6">
+    <main className="w-full max-w-165 mx-auto px-4">
       
       {/* Projects Section */}
       <section className="py-12">
         <p className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#9B9B9B] mb-7">
-          Projects
+          Featured Projects
         </p>
 
-        {/* Project 1: Notification Service (Intunel) */}
         {/* Intunel */}
         <a
           href="https://github.com/Habeebamoo/intunel"
@@ -29,7 +28,29 @@ const Main = () => {
           </div>
 
           <p className="text-[14px] text-[#6B6B6B] leading-[1.65]">
-            An event-driven notification infrastructure for reliable message delivery.
+            An event-driven notification service for reliable message delivery.
+          </p>
+        </a>
+
+        {/* Orbitrix */}
+        <a
+          href="https://orbitrixng.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block py-5 border-b border-[#EEEEE9] hover:opacity-55 transition-opacity duration-150"
+        >
+          <div className="flex flex-col gap-1 mb-2">
+            <span className="text-[15px] font-medium text-[#0E0E0E]">
+              Orbitrix
+            </span>
+
+            <span className="text-[11px] text-[#9B9B9B] break-all">
+              orbitrixng.com
+            </span>
+          </div>
+
+          <p className="text-[14px] text-[#6B6B6B] leading-[1.65]">
+            A Landing page for a technology company.
           </p>
         </a>
 

@@ -12,7 +12,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="w-full max-w-165 mx-auto pt-30 pb-16 px-6">
+    <section className="w-full max-w-165 mx-auto pt-30 pb-16 px-4">
       <motion.div
         initial="hidden"
         animate="show"

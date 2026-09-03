@@ -9,7 +9,7 @@ const Header = () => {
   const [theme, setTheme] = useState<"light" | "dark">("light");
 
   return (
-    <header className="w-full max-w-165 mx-auto pt-9 px-6 flex items-center justify-between">
+    <header className="w-full max-w-165 mx-auto pt-9 px-4 flex items-center justify-between">
       {/* Name / Brand */}
       <span className="text-[13px] font-medium text-[#0E0E0E] tracking-[-0.01em]">
         <span className="hidden min-[380px]:inline">Habeeb Amoo</span>
