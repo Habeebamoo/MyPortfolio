@@ -6,7 +6,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="w-full max-w-165 mx-auto px-4 mt-12 pb-20">
+    <footer className="w-full max-w-165 mx-auto px-5 mt-12 pb-20">
       {/* Divider */}
       <hr className="border-none border-t border-[#E5E5E1]" />
 

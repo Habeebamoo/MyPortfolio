@@ -2,7 +2,7 @@
 
 const Main = () => {
   return (
-    <main className="w-full max-w-165 mx-auto px-4">
+    <main className="w-full max-w-165 mx-auto px-5">
       
       {/* Projects Section */}
       <section className="py-12">
@@ -23,7 +23,7 @@ const Main = () => {
             </span>
 
             <span className="text-[11px] text-[#9B9B9B] break-all">
-              github.com/Habeebamoo/intunel
+              github.com
             </span>
           </div>
 
