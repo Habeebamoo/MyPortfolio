@@ -50,7 +50,7 @@ const Main = () => {
           </div>
 
           <p className="text-[14px] text-[#6B6B6B] leading-[1.65]">
-            A Landing page for a technology company.
+            A landing page for a technology company.
           </p>
         </a>
 
