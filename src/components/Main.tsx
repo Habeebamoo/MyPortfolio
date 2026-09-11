@@ -1,5 +1,36 @@
 "use client";
 
+interface Projects {
+  link: string
+  name: string
+  displayLink: string
+  desc: string
+}
+
+const projects: Projects[] = [
+  {
+    link: "https://github.com/Habeebamoo/intunel", 
+    name: "Intunel", 
+    displayLink: "github.com", 
+    desc: "An event-driven notification service for reliable message delivery."
+  }, {
+    link: "https://github.com/Habeebamoo/l7-load-balancer",
+    name: "Load-Balancer",
+    displayLink: "github.com",
+    desc: "A layer 7 load balancer & reverse proxy that distributes incoming requests traffic accross server pools."
+  }, {
+    link: "https://myclivo.com",
+    name: "Clivo",
+    displayLink: "myclivo.com",
+    desc: "Modern blogging platform for writers and readers."
+  }, {
+    link: "https://orbitrixng.com",
+    name: "Orbitrix",
+    displayLink: "orbitrixng.com",
+    desc: "A landing page for a technology company."
+  } 
+]
+
 const Main = () => {
   return (
     <main className="w-full max-w-165 mx-auto px-5">
@@ -10,71 +41,31 @@ const Main = () => {
           Featured Projects
         </p>
 
-        {/* Intunel */}
-        <a
-          href="https://github.com/Habeebamoo/intunel"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block py-5 border-t border-b border-[#EEEEE9] hover:opacity-55 transition-opacity duration-150"
-        >
-          <div className="flex flex-col gap-1 mb-2">
-            <span className="text-[15px] font-medium text-[#0E0E0E]">
-              Intunel
-            </span>
+        {projects.map(prj => {
+          return (
+            <a
+              href={prj.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block py-5 border-t border-[#EEEEE9] hover:opacity-55 transition-opacity duration-150"
+            >
+              <div className="flex flex-col gap-1 mb-2">
+                <span className="text-[15px] font-medium text-[#0E0E0E]">
+                  {prj.name}
+                </span>
 
-            <span className="text-[11px] text-[#9B9B9B] break-all">
-              github.com
-            </span>
-          </div>
+                <span className="text-[11px] text-[#9B9B9B] break-all">
+                  {prj.displayLink}
+                </span>
+              </div>
 
-          <p className="text-[14px] text-[#6B6B6B] leading-[1.65]">
-            An event-driven notification service for reliable message delivery.
-          </p>
-        </a>
-
-        {/* Orbitrix */}
-        <a
-          href="https://orbitrixng.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block py-5 border-b border-[#EEEEE9] hover:opacity-55 transition-opacity duration-150"
-        >
-          <div className="flex flex-col gap-1 mb-2">
-            <span className="text-[15px] font-medium text-[#0E0E0E]">
-              Orbitrix
-            </span>
-
-            <span className="text-[11px] text-[#9B9B9B] break-all">
-              orbitrixng.com
-            </span>
-          </div>
-
-          <p className="text-[14px] text-[#6B6B6B] leading-[1.65]">
-            A landing page for a technology company.
-          </p>
-        </a>
-
-        {/* Clivo */}
-        <a
-          href="https://myclivo.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block py-5 border-b border-[#EEEEE9] hover:opacity-55 transition-opacity duration-150"
-        >
-          <div className="flex flex-col gap-1 mb-2">
-            <span className="text-[15px] font-medium text-[#0E0E0E]">
-              Clivo
-            </span>
-
-            <span className="text-[11px] text-[#9B9B9B] break-all">
-              myclivo.com
-            </span>
-          </div>
-
-          <p className="text-[14px] text-[#6B6B6B] leading-[1.65]">
-            Modern blogging platform for writers and readers.
-          </p>
-        </a>
+              <p className="text-[14px] text-[#6B6B6B] leading-[1.65]">
+                {prj.desc}
+              </p>
+            </a>
+          )
+        })}
+        
       </section>
 
       {/* Divider */}
