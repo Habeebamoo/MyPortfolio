@@ -15,14 +15,14 @@ const projects: Projects[] = [
     desc: "An event-driven notification service for reliable message delivery."
   }, {
     link: "https://github.com/Habeebamoo/l7-load-balancer",
-    name: "Load-Balancer",
+    name: "l7-load-balancer",
     displayLink: "github.com",
     desc: "A layer 7 load balancer & reverse proxy that distributes incoming requests traffic accross server pools."
   }, {
     link: "https://myclivo.com",
     name: "Clivo",
     displayLink: "myclivo.com",
-    desc: "Modern blogging platform for writers and readers."
+    desc: "A blogging platform for writers and readers."
   }, {
     link: "https://orbitrixng.com",
     name: "Orbitrix",
@@ -36,9 +36,9 @@ const Main = () => {
     <main className="w-full max-w-165 mx-auto px-5">
       
       {/* Projects Section */}
-      <section className="py-12">
-        <p className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#9B9B9B] mb-7">
-          Featured Projects
+      <section className="pt-12 mb-8">
+        <p className="text-[11px] font-medium uppercase tracking-[0.08em] text-black border-b border-[#EEEEE9] pb-4 mb-8">
+          Projects
         </p>
 
         {projects.map(prj => {
@@ -47,15 +47,15 @@ const Main = () => {
               href={prj.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="block py-5 border-t border-[#EEEEE9] hover:opacity-55 transition-opacity duration-150"
+              className="block py-5 border-b border-[#EEEEE9] hover:opacity-55 transition-opacity duration-150"
             >
-              <div className="flex flex-col gap-1 mb-2">
+              <div className="flex flex-col gap-2 mb-3">
                 <span className="text-[15px] font-medium text-[#0E0E0E]">
                   {prj.name}
                 </span>
 
                 <span className="text-[11px] text-[#9B9B9B] break-all">
-                  {prj.displayLink}
+                  {prj.displayLink.toUpperCase()}
                 </span>
               </div>
 
@@ -73,7 +73,7 @@ const Main = () => {
 
       {/* Work Experience Section */}
       <section className="py-12">
-        <p className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#9B9B9B] mb-7">
+        <p className="text-[11px] font-medium uppercase tracking-[0.08em] text-black border-b border-[#EEEEE9] pb-4 mb-7">
           Work Experience
         </p>
         <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6">
