@@ -65,6 +65,62 @@
   50% { height: 12px; }
 }
 
+.tsb-root {
+  --bg: #ffffff;
+  --icon: #8c8c8c;
+  --muted: #a6a6a6;
+  min-height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(18px, 3vw, 50px) 10px;
+  background: var(--bg);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  box-sizing: border-box;
+}
+
+.tsb-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(20px, 6vw, 72px);
+  width: 100%;
+  max-width: 900px;
+}
+
+.tsb-slot {
+  width: clamp(84px, 22vw, 160px);
+  height: clamp(80px, 19vw, 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tsb-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  will-change: opacity, transform, filter;
+}
+
+.tsb-icon {
+  width: clamp(44px, 12vw, 84px);
+  height: clamp(44px, 12vw, 84px);
+  color: var(--icon);
+}
+
+.tsb-label {
+  font-size: clamp(11px, 2.4vw, 14px);
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tsb-item { transition-duration: 0ms !important; }
+}
+
 .animate-eq-1 {
   animation: eq-bounce-1 0.9s ease-in-out infinite;
 }

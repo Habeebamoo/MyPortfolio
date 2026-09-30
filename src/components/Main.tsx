@@ -1,5 +1,7 @@
 "use client";
 
+import Glyph from "@/src/components/glyphs"
+
 interface Projects {
   link: string
   name: string
@@ -71,6 +73,8 @@ const Main = () => {
       {/* Divider */}
       <hr className="border-none border-t border-[#E5E5E1]" />
 
+      <Glyph />
+
       {/* Work Experience Section */}
       <section className="py-12">
         <p className="text-[11px] font-medium uppercase tracking-[0.08em] text-black border-b border-[#EEEEE9] pb-4 mb-7">
@@ -91,9 +95,10 @@ const Main = () => {
 
       {/* Contact Section */}
       <section className="py-12">
-        <p className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#9B9B9B] mb-7">
+        <p className="text-[11px] font-medium uppercase tracking-[0.08em] text-black border-b border-[#EEEEE9] pb-4 mb-7">
           Contact
         </p>
+
         <p className="text-[15px] text-[#3D3D3D] leading-[1.8]">
           Available for opportunities and projects.{" "}
           <a 
