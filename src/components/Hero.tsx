@@ -7,8 +7,8 @@ import { useRouter } from "next/navigation";
 const Hero = () => {
   const router = useRouter();
 
-  const toCv = () => {
-    router.push("https://drive.google.com/file/d/1IZo6_4eUabNZbbPSYw22a36ucxZzxptP/view?usp=drive_link");
+  const toResume = () => {
+    router.push("https://drive.google.com/file/d/1o1yfgYKkL7fFPDMYojvezTfhr5BJzTQk/view?usp=sharing");
   };
 
   return (
@@ -48,10 +48,10 @@ const Hero = () => {
           {/* Underlined CV Link nested inside content flow */}
           <div className="text-[15px] text-[#3D3D3D] leading-[1.8]">
             <button
-              onClick={toCv}
+              onClick={toResume}
               className="underline underline-offset-[3px] text-[#3D3D3D] hover:text-[#0E0E0E] transition-colors duration-150 cursor-pointer"
             >
-              Download CV
+              Download Resume
             </button>
           </div>
         </div>
