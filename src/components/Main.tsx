@@ -11,26 +11,29 @@ interface Projects {
 
 const projects: Projects[] = [
   {
-    link: "https://github.com/Habeebamoo/intunel", 
-    name: "Intunel", 
-    displayLink: "github.com", 
-    desc: "An event-driven notification service for reliable message delivery."
-  }, {
-    link: "https://github.com/Habeebamoo/l7-load-balancer",
-    name: "l7-load-balancer",
+    link: "https://github.com/Habeebamoo/intunel",
+    name: "Intunel",
     displayLink: "github.com",
-    desc: "A layer 7 load balancer & reverse proxy that distributes incoming requests traffic accross server pools."
-  }, {
+    desc: "An event-driven notification service built for reliable message delivery and concurrent processing."
+  },
+  {
+    link: "https://github.com/Habeebamoo/l7-load-balancer",
+    name: "L7 Load Balancer",
+    displayLink: "github.com",
+    desc: "A Layer 7 load balancer and reverse proxy that distributes traffic across server pools."
+  },
+  {
     link: "https://myclivo.com",
     name: "Clivo",
     displayLink: "myclivo.com",
-    desc: "A blogging platform for writers and readers."
-  }, {
+    desc: "A production blogging platform for publishing, social feeds, comments, and content discovery."
+  },
+  {
     link: "https://orbitrixng.com",
     name: "Orbitrix",
     displayLink: "orbitrixng.com",
-    desc: "A landing page for a technology company."
-  } 
+    desc: "A technology company website designed and built for a production business."
+  }
 ]
 
 const Main = () => {
