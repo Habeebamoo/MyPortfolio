@@ -38,11 +38,11 @@ const Hero = () => {
 
           {/* About Paragraphs */}
           <p className="text-[15px] text-[#3D3D3D] leading-[1.8] max-w-140">
-            I design and build APIs, backend services, and distributed systems — focused on performance, reliability, and clean architecture that holds up under real conditions.
+            I design and build reliable software systems, backend services, APIs, and infrastructure — with a focus on performance, scalability, and efficient architecture.
           </p>
           
           <p className="text-[15px] text-[#3D3D3D] leading-[1.8] max-w-140 mt-4 mb-7">
-            Beyond the core infrastructure, I build the product layer — shipping fast web applications that solves real users problems.
+            From building the system to preparing it for real-world scale, I focus on engineering solutions that work reliably without unnecessary complexity or infrastructure cost.
           </p>
 
           {/* Underlined CV Link nested inside content flow */}
