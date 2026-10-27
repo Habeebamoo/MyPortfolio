@@ -46,9 +46,10 @@ const Main = () => {
           Projects
         </p>
 
-        {projects.map(prj => {
+        {projects.map((prj, i) => {
           return (
             <a
+              key={i}
               href={prj.link}
               target="_blank"
               rel="noopener noreferrer"

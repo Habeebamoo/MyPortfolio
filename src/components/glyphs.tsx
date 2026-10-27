@@ -5,9 +5,12 @@ import {
   SiTypescript,
   SiPostgresql,
   SiLinux,
+  SiNginx,
+  SiGit,
 } from "react-icons/si";
 import { DiRedis } from "react-icons/di"
 import type { IconType } from "react-icons";
+import { FaNodeJs, FaReact } from "react-icons/fa";
 
 type Tech = { id: string; label: string; Icon: IconType };
 type Range = readonly [number, number];
@@ -19,6 +22,10 @@ const TECH: Tech[] = [
   { id: "redis", label: "Redis", Icon: DiRedis },
   { id: "postgres", label: "PostgreSQL", Icon: SiPostgresql },
   { id: "linux", label: "Linux", Icon: SiLinux },
+  { id: "nginx", label: "Nginx", Icon: SiNginx },
+  { id: "git", label: "Git", Icon: SiGit },
+  { id: "node", label: "Node.js", Icon: FaNodeJs },
+  { id: "react", label: "React", Icon: FaReact },
 ];
 
 const FADE: Range = [1800, 3200];
